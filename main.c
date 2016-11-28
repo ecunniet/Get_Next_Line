@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ecunniet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/27 15:58:23 by ecunniet          #+#    #+#             */
-/*   Updated: 2016/11/28 18:16:45 by ecunniet         ###   ########.fr       */
+/*   Created: 2016/11/28 17:33:23 by ecunniet          #+#    #+#             */
+/*   Updated: 2016/11/28 18:16:40 by ecunniet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_nex_line.h"
 
-int		get_next_line(const int fd, char **line)
+int		main(int argc, char **argv)
 {
+	if (argc == 2)
+	{
 
+
+	
+	}
+	return (0);
 }

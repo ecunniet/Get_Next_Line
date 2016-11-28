@@ -6,7 +6,7 @@
 /*   By: ecunniet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 17:33:23 by ecunniet          #+#    #+#             */
-/*   Updated: 2016/11/28 18:16:40 by ecunniet         ###   ########.fr       */
+/*   Updated: 2016/11/28 18:44:55 by ecunniet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,16 @@
 
 int		main(int argc, char **argv)
 {
+	int i;
+
+	i = 0;
 	if (argc == 2)
 	{
-
-
-	
+		while (i < 10)
+		{
+			prinft("----->%s\n", get_next_line(0, argv));
+			i++;
+		}
 	}
 	return (0);
 }

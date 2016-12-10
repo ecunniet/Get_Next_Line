@@ -6,23 +6,29 @@
 /*   By: ecunniet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 17:33:23 by ecunniet          #+#    #+#             */
-/*   Updated: 2016/11/28 18:44:55 by ecunniet         ###   ########.fr       */
+/*   Updated: 2016/12/10 17:43:40 by ecunniet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_nex_line.h"
+#include "get_next_line.h"
+#include <stdio.h>
 
 int		main(int argc, char **argv)
 {
-	int i;
+	char	*str;
+	int		i;
+	int		fd;
 
-	i = 0;
-	if (argc == 2)
+	i = 1;
+	if (argc == 2 && (fd = open(argv[1], O_RDONLY)) > -1)
 	{
-		while (i < 10)
+		while (get_next_line(fd, &str) > 0)
 		{
-			prinft("----->%s\n", get_next_line(0, argv));
+			ft_putnbr(i);
+			ft_putstr("--->");
+			ft_putendl(str);
 			i++;
+			free(str);
 		}
 	}
 	return (0);
